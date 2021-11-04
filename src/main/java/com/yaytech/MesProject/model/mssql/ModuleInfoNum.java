@@ -12,7 +12,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Table(name = "MAIN_SEARCH_TABLE_2")
+@Table(name = "MAIN_SEARCH_TABLE_3")
 public class ModuleInfoNum {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -69,4 +69,9 @@ public class ModuleInfoNum {
     private String auto;
     private double pm;
     private String towsign;
+    private Date search_date;
+    private String repairlocation;
+    private String badcode;
+    private String badposition;
+
 }

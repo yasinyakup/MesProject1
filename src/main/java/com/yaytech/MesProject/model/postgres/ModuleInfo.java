@@ -72,6 +72,10 @@ public class ModuleInfo {
    private String auto;
    private String pm;
    private String towsign;
+   private Date search_date;
+   private String repairlocation;
+   private String badcode;
+   private String badposition;
 
    public ModuleInfoNum1 convertToNumeric1(){
       return ModuleInfoNum1.builder()
@@ -127,6 +131,10 @@ public class ModuleInfo {
               .towsign(this.towsign)
               .updated(this.updated)
               .updatedby(this.updatedby)
+              .search_date(this.search_date)
+              .repairlocation(this.repairlocation)
+              .badcode(this.badcode)
+              .badposition(this.badposition)
               .build();
    }
    public ModuleInfoNum convertToNumeric(){
@@ -183,6 +191,10 @@ public class ModuleInfo {
               .towsign(this.towsign)
               .updated(this.updated)
               .updatedby(this.updatedby)
+              .search_date(this.search_date)
+              .repairlocation(this.repairlocation)
+              .badcode(this.badcode)
+              .badposition(this.badposition)
               .build();
    }
 }

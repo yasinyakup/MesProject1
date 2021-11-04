@@ -53,7 +53,7 @@ public class MsSqlConfig {
     public LocalContainerEntityManagerFactoryBean mssqlEntityManager(EntityManagerFactoryBuilder postgresEntityManagerFactoryBuilder, @Qualifier("mssqlDataSource") DataSource mssqlDataSource) {
 
         HashMap<String, Object> hibernateProperties = new HashMap<>();
-        hibernateProperties.put("hibernate.hbm2ddl.auto", "none");
+        hibernateProperties.put("hibernate.hbm2ddl.auto", "update");
 
         return postgresEntityManagerFactoryBuilder
                 .dataSource(mssqlDataSource)

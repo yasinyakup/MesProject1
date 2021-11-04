@@ -40,5 +40,6 @@ public class MesProjectApplication implements CommandLineRunner {
 		List<ModuleInfoNum> m2 = m1.stream().map(ModuleInfo::convertToNumeric).collect(Collectors.toList());
 		//m2.forEach(System.out::println);
 		moduleInfoNUmRepo.saveAll(m2);
+		System.out.println("Mission Completed");
 	}
 }

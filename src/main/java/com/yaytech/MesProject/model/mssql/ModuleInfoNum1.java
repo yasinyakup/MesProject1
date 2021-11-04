@@ -70,4 +70,9 @@ public class ModuleInfoNum1 {
     private String auto;
     private String pm;
     private String towsign;
+    private Date search_date;
+    private String repairlocation;
+    private String badcode;
+    private String badposition;
+
 }
